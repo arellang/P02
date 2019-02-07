@@ -361,6 +361,10 @@ nav a:hover, nav a:focus, .dropdown-content a:hover, .dropdown-content a:focus {
   opacity: 0.8;
 }
 
+#about_img img:hover, :focus {
+  opacity: 1;
+}
+
 .container-checkout {
   display: flex;
   align-items: flex-start;
