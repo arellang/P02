@@ -14,7 +14,7 @@
     <!-- brand mark (LINKED TO STYLESHEET)-->
   <header>
         <div>
-      <a href="index.html">
+      <a href="home.html">
         <img src="sources/logo.png" class="padding-down" alt="HTML tutorial" style="width:35px">
       </a>
     </div>
@@ -26,10 +26,11 @@
         <div class="menu-button"></div>
       </button>
       <div class="dropdown-content">
+        <a href="home.html">Home</a><br>
        <a href="news.html">News</a><br>
        <a href="about.html">About Us</a><br>
-       <a href="contact.html">Contact Us</a><br>
        <a href="product-listing.html">Products</a><br>
+       <a href="contact.html">Contact Us</a><br>
       </div>
     </div>
   </header>
@@ -54,7 +55,7 @@
           New Years Day
           Memorial Day
           Independence Day
-          Labor Day 
+          Labor Day
           Thanksgiving
           Christmas </p>
       </div>
@@ -66,37 +67,28 @@
        <h3>Send Us a Message</h3>
 
           <form>
-            <label>MESSAGE: </label><br>
-            <input type="text" name="number">
+            <label for="message">MESSAGE:</label>
+              <input type="text" id="message">
+
+            <label for="cardnumber">STARBUCKS CARD NUMBER: (optional)</label>
+              <input type="text" id="cardnumber" placeholder="XXXX XXXX XXXX XXXX">
+
+            <label for="firstname">FIRST NAME:</label>
+            <input type="text" id="firstname">
+
+            <label for="lastname">LAST NAME:</label>
+              <input type="text" id="lastname">
+
+            <label for="email">EMAIL:</label>
+              <input type="text" id="email">
+
+            <label for="phonenumber">PHONE NUMBER:</label>
+              <input type="text" id="phonenumber" placeholder="XXX XXX XXXX">
+
           </form>
 
-            <form>
-              <label>CARD NUMBER: </label><br>
-              <input type="text" name="number" placeholder="XXXX XXXX XXXX XXXX">
-            </form>
-
-            <form>
-              <label>FIRST NAME: </label><br>
-              <input type="text" name="number">
-            </form>
-
-            <form>
-              <label>LAST NAME: </label><br>
-              <input type="text" name="number">
-            </form>
-
-            <form>
-              <label>EMAIL: </label><br>
-              <input type="text" name="number">
-            </form>
-
-            <form>
-              <label>PHONE NUMBER: </label><br>
-              <input type="text" name="number" placeholder="XXX XXX XXXX">
-            </form>
-
-            <br>
-            <a class="button-submit" href="#">Submit</a>
+          <br>
+          <a class="button-submit" href="#">Submit</a>
 
 
       </div>
@@ -107,7 +99,10 @@
 
   <!-- brand mark -->
   <footer>
-    <img src="sources/brand.png"  class="padding-down" alt="HTML tutorial" style="width:200px">
+    <a href="home.html">
+      <img src="sources/brand.png"  class="padding-down" alt="HTML tutorial" style="width:200px">
+    </a>
+      <center><a href = "index.html" class="button-submit">Index Page</a></center>
   </footer>
 
   <body>
