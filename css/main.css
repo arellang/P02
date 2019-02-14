@@ -22,7 +22,7 @@ body {
   font-family: 'Source Code Pro', monospace;
   line-height: 1.5em;
   color: white;
-  margin:3% 5% 3% 5%;
+  margin:1% 5% 3% 5%;
   font-weight: 100;
 }
 
@@ -219,10 +219,10 @@ h1 {
 
 h2 {
   font-weight: 800;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   letter-spacing: 0.5em;
   /* opacity: 0.4; */
-  margin-top: 0.8em;
+  margin-top: 0.5em;
   margin-bottom: 0.3em;
   line-height: 1.5em;
 }
@@ -247,7 +247,7 @@ h5 {
 }
 
 h6 {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   margin-top: 2em;
   margin-bottom: 0;
 }
@@ -261,15 +261,10 @@ p {
   COMBINED ELEMENTS -------------------
 */
 /* Styling Main navigation */
-.padding-down {
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-nav {
+/* nav {
   background-color: black;
   margin: 0;
-}
+} */
 
 nav a, .dropdown-content a {
   font-family: 'Source Code Pro', monospace;
@@ -280,17 +275,37 @@ nav a, .dropdown-content a {
   text-align: left;
   padding-left: 1em;
   font-weight: 100;
-  color: white;
+  color: grey;
 }
 
-nav a:hover, nav a:focus, .dropdown-content a:hover, .dropdown-content a:focus {
+/* nav a:hover, nav a:focus, .dropdown-content a:hover, .dropdown-content a:focus {
   text-decoration: none;
   transition-duration: 0.5s;
   color: rgb(207, 131, 42);
+} */
+
+.menu-content a {
+	font-family: 'Source Code Pro', monospace;
+  font-size: 1.3rem;
+  line-height: 1.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+	float: left;
+  margin: 1% 0 5% 0;
+  width: 20%;
+	text-align: center;
+}
+
+.menu-content a:hover {
+	color: white;
+	transition: 0.5s;
 }
 
   /* Styling for the dropdown navigation bar in responsive webpages*/
-  button {
+	button {
     background: none;
     border: none;
   }
@@ -308,7 +323,7 @@ nav a:hover, nav a:focus, .dropdown-content a:hover, .dropdown-content a:focus {
   }
 
   .dropdown {
-  display: inline;
+  display: none;
   width: 100%;
   margin: 0 0 1em 0;
   border: none;
@@ -332,11 +347,12 @@ nav a:hover, nav a:focus, .dropdown-content a:hover, .dropdown-content a:focus {
   padding-left: auto;
   padding-right: auto;
   display: block;
+	font-weight: bold;
   text-align: left;
   }
 
-  .dropdown-content a:hover :focus {
-    transform: translateX(20px);
+  .dropdown-content a:hover {
+    color: white;
     transition: 0.5s;
   }
 
@@ -399,8 +415,8 @@ nav a:hover, nav a:focus, .dropdown-content a:hover, .dropdown-content a:focus {
 #block-flex-grow-2 {
   flex-grow: 6;
   margin-top: 4em;
-  border-radius: 0.5em;
-  border: 1px solid rgb(207, 131, 42);
+  border-radius: 0.2em;
+  border: 1px solid grey;
   padding:0 2em 2em 2em;
 }
 
@@ -413,28 +429,67 @@ nav a:hover, nav a:focus, .dropdown-content a:hover, .dropdown-content a:focus {
   h2 {
     font-size: 2.5em;
   }
-  
+
   header {
     padding:1em 1em 0 1em;
   }
+
+	/* Hide the menu bar and show the dropdown menu */
+		.dropdown, .dropdown a {
+			display: inline;
+		}
+		.menu-content {
+			display: none;
+		}
 }
 
 @media screen and (max-width: 600px) {
   body {
     margin:0;
+		margin-bottom: 5%;
     line-height: normal;
   }
 
   h2 {
     font-size: 2em;
   }
-  
+
   header {
     padding:1em 1em 0 1em;
   }
-  
+
+/* Hide the menu bar and show the dropdown menu */
+	.dropdown, .dropdown a {
+		display: inline;
+	}
+	.menu-content {
+		display: none;
+	}
+
   .block {
 	flex-grow: 1;
-	flex-basis: 20%;
+	/* flex-basis: 20%; */
 }
+}
+
+.padding-down {
+	padding-bottom: 1.5em;
+}
+
+/* Footer */
+footer {
+	margin-top: 7%;
+}
+
+.in-text-style-footer  {
+	font-size: 0.7rem;
+	color: white;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+	font-weight: bold;
+}
+
+.in-text-style-footer:hover {
+  color: rgb(207, 131, 42);
+  transition: 0.3s;
 }
