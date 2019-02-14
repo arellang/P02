@@ -1,11 +1,17 @@
-/*
-  STYLE GUIDE STYLING
-  Default styling for the style guide
-*/
+/* STYLE GUIDE STYLING */
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+  width: 100%;
+	height: 100%;
+}
+
 html {
     background-color: rgb(20, 20, 20);
-    width: 100%;
-    height: 100%;
 }
 
 header {
@@ -13,15 +19,11 @@ header {
 }
 
 body {
-  font-family:'Source Code Pro', monospace;
-  font-style: normal;
+  font-family: 'Source Code Pro', monospace;
   line-height: 1.5em;
-  font-weight: 100;
   color: white;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin:3% 5% 3% 5%;
+  font-weight: 100;
 }
 
 .button-nav, .button-submit {
@@ -222,6 +224,7 @@ h2 {
   /* opacity: 0.4; */
   margin-top: 0.8em;
   margin-bottom: 0.3em;
+  line-height: 1.5em;
 }
 
 h3 {
@@ -251,7 +254,7 @@ h6 {
 
 p {
   margin-top: 0;
-  width: 70%;
+  width: 100%;
 }
 
 /*
@@ -286,7 +289,7 @@ nav a:hover, nav a:focus, .dropdown-content a:hover, .dropdown-content a:focus {
   color: rgb(207, 131, 42);
 }
 
-  /* Styling for the navigation bar in responsive webpages*/
+  /* Styling for the dropdown navigation bar in responsive webpages*/
   button {
     background: none;
     border: none;
@@ -401,21 +404,16 @@ nav a:hover, nav a:focus, .dropdown-content a:hover, .dropdown-content a:focus {
   padding:0 2em 2em 2em;
 }
 
-/* Responsive!! */
+/* Media Queries */
 @media screen and (max-width: 992px) {
   body {
     line-height: normal;
   }
+
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
   }
-  p {
-    width:100%;
-  }
-  .container, .container-checkout {
-    justify-content: space-around;
-    flex-direction: row;
-  }
+  
   header {
     padding:1em 1em 0 1em;
   }
@@ -426,18 +424,17 @@ nav a:hover, nav a:focus, .dropdown-content a:hover, .dropdown-content a:focus {
     margin:0;
     line-height: normal;
   }
+
   h2 {
-    font-size: 2rem;
+    font-size: 2em;
   }
-  p {
-    width:100%;
-  }
-  .container, .container-checkout {
-    justify-content: space-around;
-    flex-direction: column;
-    margin:0;
-  }
+  
   header {
     padding:1em 1em 0 1em;
   }
+  
+  .block {
+	flex-grow: 1;
+	flex-basis: 20%;
+}
 }
