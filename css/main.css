@@ -66,14 +66,14 @@ img {
   font-style: italic;
   font-size: 0.8em;
   letter-spacing: 0.2em;
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .in-text-style:hover {
   text-decoration: none;
   color: rgb(207, 131, 42);
   transition: 0.3s;
-}
+} 
 
 /* Styling for the navigation button */
 .button-nav {
@@ -265,13 +265,24 @@ p {
   background-color: black;
   margin: 0;
 } */
+/* Will be implemented later on to simplify code
+a {
+  color: rgb(207, 131, 42);
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a:hover, a:focus {
+	transition-property: color; 
+	transition-duration: 0.5s;
+} */
 
 nav a, .dropdown-content a {
   font-family: 'Source Code Pro', monospace;
   font-size: 1.5rem;
-  line-height: 1.8em;
   text-decoration: none;
-  text-transform: uppercase;
+  line-height: 1.8em;
   text-align: left;
   padding-left: 1em;
   font-weight: 100;
@@ -485,9 +496,10 @@ footer {
 	font-size: 0.7rem;
 	color: white;
   letter-spacing: 0.2em;
-  text-decoration: none;
-	font-weight: bold;
+  text-decoration: underline;
+  font-weight: bold;
 }
+
 
 .in-text-style-footer:hover {
   color: rgb(207, 131, 42);
