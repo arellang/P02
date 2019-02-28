@@ -79,31 +79,30 @@ img {
 .button-nav {
   display: inline-block;
   padding: 0.5em 2em;
-  background-color: rgb(20, 20, 20);
-  margin: 0 0 0 0;
-  margin-right: 0;
-  box-sizing: content-box;
+  background-color: rgb(10, 10, 10);
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   font-style: normal;
   color: white;
-  transition-duration: 0.3s;
 }
 
 .button-nav:hover, .button-nav:focus {
+  transition-duration: 0.3s;
   background-color: rgb(207, 131, 42);
 }
 
 
 /* Styling for the navigation button and submit button */
 .button-submit {
+  display: inline-block;
   font-style: normal;
-  font-weight: bolder;
+  text-align: center;
   text-transform: uppercase;
-  text-decoration: underline;
+  text-decoration: none;
   letter-spacing: 0.3em;
-  color: grey;
+  color: white;
+  padding: 0.5em 2em;
 }
 
 .button-submit:hover, .button-submit:focus {
@@ -325,8 +324,6 @@ nav a, .dropdown-content a {
   .dropdown-content a {
   padding-top: 0.2em;
   padding-bottom: 0.2em;
-  padding-left: auto;
-  padding-right: auto;
   display: block;
 	font-weight: bold;
   text-align: left;
@@ -472,6 +469,7 @@ footer {
 	font-size: 0.8rem;
 	color: white;
   font-weight: bold;
+  align: center;
 }
 
 
